@@ -17,7 +17,7 @@ public class Carro {
 	}
 	
 	public Carro(String placa, String marca, String modelo, String cor) {
-		this.placa = placa;
+		setPlaca(placa);
 		this.marca = marca;
 		this.modelo = modelo;
 		this.cor = cor;
@@ -28,7 +28,12 @@ public class Carro {
 	}
 
 	public void setPlaca(String placa) {
-		this.placa = placa;
+		if(placa.length() != 8) {
+			System.out.println("Placa Inválida!");
+		}
+		else {
+			this.placa = placa;
+		}
 	}
 
 	public String getMarca() {

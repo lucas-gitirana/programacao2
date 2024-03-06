@@ -37,7 +37,7 @@ public class Calculadora {
 		return n1 + n2;
 	}
 	
-	public int adicao(int num01, int num02) {
+	public static int adicao(int num01, int num02) {
 		return num01 + num02;
 	}
 	
@@ -45,7 +45,7 @@ public class Calculadora {
 		return n1 - n2;
 	}
 	
-	public int subtracao(int num01, int num02) {
+	public static int subtracao(int num01, int num02) {
 		return num01 - num02;
 	}
 	
@@ -53,16 +53,29 @@ public class Calculadora {
 		return n1 * n2;
 	}
 	
-	public int multiplicacao(int num01, int num02) {
-		return num01 * num02;
+	public static int multiplicacao(int num01, int num02) {
+		return num01 * num02;			
 	}
 	
 	public double divisao() {
-		return n1 / n2;
+		if(n2 != 0) {
+			return n1 / n2;
+		}
+		else {
+			System.out.println("O segundo número deve ser DIFERENTE de ZERO");
+			return 0;
+		}
+		
 	}
 	
-	public int divisao(int num01, int num02) {
-		return num01 / num02;
+	public static int divisao(int num01, int num02) {
+		if(num02 != 0) {
+			return num01 / num02;
+		}
+		else {
+			System.out.println("O segundo número deve ser DIFERENTE de ZERO");
+			return 0;
+		}
 	}
 
 	@Override

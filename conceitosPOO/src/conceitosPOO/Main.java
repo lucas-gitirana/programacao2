@@ -7,13 +7,14 @@ public class Main {
 		//Exercício 01
 		System.out.println("EXERCÍCIO 01");
 		
-		Carro carro = new Carro("AAA999", "Volks", "Gol", "Prata");
+		Carro carro = new Carro("AAA999-0", "Volks", "Gol", "Prata");
+//		carro.setPlaca("AAAAAAAAAA");
 		System.out.println(carro.toString());
 		
 		//Exercício 02
 		System.out.println("\n\nEXERCÍCIO 02");
 		
-		Calculadora calc = new Calculadora(80, 5);
+		Calculadora calc = new Calculadora(80, 0);
 		System.out.println("Adição: "+calc.adicao());
 		System.out.println("Subtração: "+calc.subtracao());
 		System.out.println("Multiplicação: "+calc.multiplicacao());
@@ -56,10 +57,10 @@ public class Main {
 		//Exercício 05
 		System.out.println("\n\nEXERCÍCIO 05");
 		
-		System.out.println("Adição com inteiros: "+calc.adicao(10, 1));
-		System.out.println("Subtração com inteiros: "+calc.subtracao(10, 5));
-		System.out.println("Multiplicação com inteiros: "+calc.multiplicacao(2, 7));
-		System.out.println("Divisão com inteiros: "+calc.divisao(10, 3));
+		System.out.println("Adição com inteiros: "+Calculadora.adicao(10, 1));
+		System.out.println("Subtração com inteiros: "+Calculadora.subtracao(10, 5));
+		System.out.println("Multiplicação com inteiros: "+Calculadora.multiplicacao(2, 7));
+		System.out.println("Divisão com inteiros: "+Calculadora.divisao(10, 3));
 		
 	}
 	
